@@ -1,10 +1,10 @@
 <div align="center">
 
-# DevilutionX-AppImage 🐧
+# DevilutionX-AppImage-Enhanced 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/DevilutionX-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/DevilutionX-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/DevilutionX-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/DevilutionX-AppImage/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/DevilutionX-AppImage)](https://github.com/pkgforge-dev/DevilutionX-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/DevilutionX-AppImage-Enhanced/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/DevilutionX-AppImage-Enhanced/releases/latest)
+[![CI Build Status](https://github.com//pkgforge-dev/DevilutionX-AppImage-Enhanced/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/DevilutionX-AppImage-Enhanced/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/DevilutionX-AppImage-Enhanced)](https://github.com/pkgforge-dev/DevilutionX-AppImage-Enhanced/releases/latest)
 
 <p align="center">
   <img src="https://github.com/diasurgical/DevilutionX/blob/master/Packaging/resources/icon_flat.png" width="128" />
@@ -13,7 +13,7 @@
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/DevilutionX-AppImage/releases/latest) | [Click here](https://github.com/diasurgical/DevilutionX) |
+| [Click here](https://github.com/pkgforge-dev/DevilutionX-AppImage-Enhanced/releases/latest) | [Click here](https://github.com/diasurgical/DevilutionX) |
 
 </div>
 
