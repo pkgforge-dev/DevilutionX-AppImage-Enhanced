@@ -8,7 +8,6 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     cmake     \
-    libdecor  \
     ninja     \
     fmt       \
     libsodium \
@@ -16,7 +15,7 @@ pacman -Syu --noconfirm \
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano sdl2_image-mini
+get-debloated-pkgs --add-common --prefer-nano libdecor-mini sdl2_image-mini
 
 # Comment this out if you need an AUR package
 make-aur-package
