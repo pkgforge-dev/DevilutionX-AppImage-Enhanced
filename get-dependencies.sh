@@ -10,6 +10,8 @@ pacman -Syu --noconfirm \
     cmake       \
     fmt         \
     libsodium   \
+	libtomcrypt \
+	libtommath  \
 	lua			\
     sdl2-compat \
 	sdl3_image
@@ -17,6 +19,18 @@ pacman -Syu --noconfirm \
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano libdecor-mini sdl2_image-mini
+
+echo "Building stormlib..."
+echo "---------------------------------------------------------------"
+REPO="https://github.com/ladislav-zezula/stormlib"
+git clone --depth 1 "$REPO" ./stormlib
+cmake -B build-stormlib -S ./stormlib \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DBUILD_SHARED_LIBS=ON \
+	-DWITH_LIBTOMCRYPT=ON \
+    -DCMAKE_INSTALL_PREFIX=/usr
+cmake --build build-stormlib -j$(nproc)
+cmake --install build-stormlib
 
 echo "Building DevilutionX..."
 echo "---------------------------------------------------------------"
@@ -39,8 +53,7 @@ mkdir -p ./AppDir/bin
 cmake -S ./devilutionX -B build "${FLAGS[@]}" \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-    -DBUILD_TESTING=off \
+    -DBUILD_TESTING=OFF \
     -DCPACK=ON
 cmake --build build -j$(nproc)
-ls ./build
 mv -v build/devilutionx ./AppDir/bin
