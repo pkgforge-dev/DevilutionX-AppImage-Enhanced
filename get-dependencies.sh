@@ -35,11 +35,12 @@ else
 fi
 echo "$VERSION" > ~/version
 
+mkdir -p ./AppDir/bin
 cmake -S ./devilutionX -B build "${FLAGS[@]}" \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
     -DBUILD_TESTING=off \
     -DCPACK=ON
 cmake --build build -j$(nproc)
-cmake --install build
+ls ./build
+mv -v build/devilutionx ./AppDir/bin
