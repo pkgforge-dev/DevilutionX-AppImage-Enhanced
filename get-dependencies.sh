@@ -56,4 +56,4 @@ cmake -S ./devilutionX -B build "${FLAGS[@]}" \
     -DBUILD_TESTING=OFF \
     -DCPACK=ON
 cmake --build build -j$(nproc)
-mv -v build/devilutionx ./AppDir/bin
+mv -v build/devilutionx build/assets ./AppDir/bin
